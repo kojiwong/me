@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koji's Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div id="page-container">
+        <header id="header">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+        <main class="content-wrap">
+            <h1>PROJECTS</h1>
+            <p>Here are some of my current and past projects.</p>
+            <div class="project">
+                <div class="project-content">
+                    <h2>User-level Threads Package</h2>
+                    <h3>c, linux</h3>
+                    <img src="project1.jpg" alt="Schematics for thread_wait function" class="project-img">
+                    <p>     For my operating systems course, I developed a user-level threads 
+                        package to allow for tasks to run concurrently within a process.
+                        I utilized timer interrupts and signals for preemptively switching threads 
+                        and created mutual exclusion and synchronization primitives for locks and condition variables. 
+                        The list of implemented thread functions include create, yield, kill, exit, sleep, wakeup, wait, 
+                        where the picture above is the schematic for the thread_wait function.
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h2>COVID-19 CT Scan Image Classification</h2>
+                    <h3>python, scikit-learn, tensorflow, matplotlib</h3>
+                    <img src="project2.jpg" alt="A square grid of 9 CT scans labeled with a prediction from the CNN" class="project-img">
+                    <p>    I developed a Convolutional Neural Network (CNN) with two others to predict if a patient has 
+                        COVID-19 based on CT scans of their lungs. 
+                        To assess our model, we analyzed metrics such as accuracy, recall, and F1-score. </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-content">
+                    <h2>Sokoban Optimal Solver</h2>
+                    <h3>python</h3>
+                    <img src="project3.jpg" alt="Picture of Sokoban Puzzle" class="project-img">
+                    <p>     I developed a solver for the Sokoban puzzle for my Artificial Intelligence class, 
+                        where the objective is to place all boxes onto specific spots.
+                        This solver was implemented with the A* algorithm which finds 
+                        the shortest path and involved developing an advanced heuristic in order to find the optimal solution.
+                    </p>
+                </div>
+            </div>
+
+            <h3>Need a full stack web developer? Tell me about your project.</h3><br><br>
+
+            <form action="https://postman-echo.com/post" method="post">
+                <label for="email">Email address:</label><br>
+                <div class="input-container">
+                    <input type="email" name="email" id="email" required><br>
+                </div>
+                
+                <label for="idea">What idea do you have in mind?</label><br>
+                <div class="input-container">
+                    <select name="idea" id="idea" required>
+                        <option value="personal-website">Personal Website</option>
+                        <option value="eCommerce">eCommerce</option>
+                        <option value="Game">Game</option>
+                    </select><br>
+                </div>
+                <label for="feedback">Enter your project concept here</label><br>
+                <div class="input-container">
+                    <textarea name="feedback" id="feedback" required></textarea><br>
+                </div>
+
+                <label for="attachments">Attachment</label>
+                <div class="input-container">
+                    <input type="file" id="attachments" name="attachments" required><br>
+                </div>
+                
+            
+                <label for="subscribe">You agree to receive emails from me</label>
+                <input type="checkbox" id="consent" name="consent" required>
+            <br><br>
+            <div class="send-button"><input type="submit" value="Send"></div>
+            
+                
+            </form>
+        </main>
+        <footer id="footer">Copyright 2024 by wongkoji.</footer>
+    </div>
+</body>
+</html>
